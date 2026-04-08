@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grippybot"
+version = "0.1.0"
+description = "A $15 robot arm that learns to pick things up trained using ACT"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+dependencies = [
+    "torch>=2.0",
+    "torchvision>=0.15",
+    "numpy",
+    "Pillow",
+]
+
+[project.optional-dependencies]
+pi = ["pigpio", "picamera2"]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+grippybot-teleop = "grippybot.teleop.teleop:main"
+grippybot-train = "grippybot.training.train:main"
+grippybot-eval = "grippybot.evaluation.evaluate:main"
+grippybot-server = "grippybot.inference.server:main"
+grippybot-client = "grippybot.inference.client:main"
+
+[tool.setuptools.packages.find]
+include = ["grippybot*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
