@@ -2,7 +2,7 @@
 
 Step-by-step instructions for assembling the Grippy Bot arm from 3D-printed parts and SG90 servos.
 
-**STL source**: [Roboteurs](https://roboteurs.com/). Credit to them for the original Grippy Bot design.
+**STL files**: Available in the **stl** folder. Credit to [Roboteurs](https://roboteurs.com/) for the original Grippy Bot design.
 
 ## Print Settings
 

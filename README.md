@@ -27,7 +27,7 @@ Offline validation: 0.68 degrees mean joint error, 99.6% gripper accuracy.
 
 A trained checkpoint is available on HuggingFace for direct inference or fine-tuning:
 
-**[aryanmadhavverma/grippybot](https://huggingface.co/aryanmadhavverma/grippybot)**
+**[huggingface/aryanmadhavverma/grippybot](https://huggingface.co/aryanmadhavverma/grippybot)**
 
 - 18.7M params, d_model=256, 100K steps, trained on 52 demos
 - Can be used as-is for evaluation or as a starting point for further training
